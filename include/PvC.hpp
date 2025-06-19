@@ -2,6 +2,8 @@
 #define PVC_H
 
 #include <Game.hpp>
+#include <chrono>
+#include <thread>
 
 class PvC : public Game {
     private:

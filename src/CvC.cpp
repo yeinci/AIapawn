@@ -6,7 +6,7 @@ void CvC::start() {
     stack<Position*> positionsOfWhite;
     
     do  {
-        changeBoard(getMoveFromComputer(turn == WHITE ? positionsOfWhite : positionsOfBlack)); // parametre pozisyonları kaydetmek için
+        changeBoard(getMoveFromComputer(turn == WHITE ? positionsOfWhite : positionsOfBlack));
         turn = (turn == WHITE) ? BLACK : WHITE;
         gameState = isGameOver();
     } while (gameState == NOT_OVER);

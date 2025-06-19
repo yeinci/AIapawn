@@ -136,6 +136,8 @@ void Game::printTheGameResult(int winner) {
     } else {
         cout << "GAME IS DRAW";
     }
+    cin.ignore();
+    cin.get();
 }
 
 int Game::isGameOver() {

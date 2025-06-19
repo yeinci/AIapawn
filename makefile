@@ -12,7 +12,8 @@ Derle:
 	g++ -I ./include/ -o ./lib/PvC.o -c ./src/PvC.cpp
 	g++ -I ./include/ -o ./lib/CvC.o -c ./src/CvC.cpp
 	g++ -I ./include/ -o ./lib/GameManager.o -c ./src/GameManager.cpp
-	g++ -I ./include/ -o ./bin/Test ./lib/Naming.o ./lib/RandomNumberGenerator.o ./lib/Move.o ./lib/Position.o ./lib/PositionList.o ./lib/Print.o ./lib/Game.o ./lib/PvP.o ./lib/PvC.o ./lib/CvC.o ./lib/GameManager.o ./src/Main.cpp
+	g++ -I ./include/ -o ./lib/Menu.o -c ./src/Menu.cpp
+	g++ -I ./include/ -o ./bin/Test ./lib/Naming.o ./lib/RandomNumberGenerator.o ./lib/Move.o ./lib/Position.o ./lib/PositionList.o ./lib/Print.o ./lib/Game.o ./lib/PvP.o ./lib/PvC.o ./lib/CvC.o ./lib/GameManager.o ./lib/Menu.o ./src/Main.cpp
 
 Calistir:
 	./bin/Test

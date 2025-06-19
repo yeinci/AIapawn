@@ -1,4 +1,8 @@
-#include <PvC.hpp>
+#include "PvC.hpp"
+#include <windows.h>
+#include <unistd.h>
+#include <thread>
+#include <chrono>
 
 int PvC::getColourFromPlayer() {
     int choice;
@@ -32,6 +36,7 @@ void PvC::start() {
             changeBoard(getMoveFromUser());
         } else {
             changeBoard(getMoveFromComputer(positionsOfComputer));
+            sleep(1);
         }
         turn = (turn == WHITE) ? BLACK : WHITE;
     }
